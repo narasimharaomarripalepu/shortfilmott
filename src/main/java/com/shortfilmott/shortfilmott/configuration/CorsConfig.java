@@ -16,7 +16,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000")  // Replace with your actual URL https://e542-160-238-73-100.ngrok-free.app
+                        .allowedOrigins("https://shortfilmottfrontend.vercel.app")  // Replace with your actual URL https://e542-160-238-73-100.ngrok-free.app
                         .allowedHeaders("*")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);
