@@ -145,7 +145,7 @@ public class shortfilmserviceimpl implements shortfilmservice{
         all=shortfilmdb.findAll();
         List<shortfilms> result=new ArrayList<>();
         for(int i=0;i<all.size();i++){
-            if((all.get(i).getShortfilm_name()).toLowerCase().equals(shortfilm_name.toLowerCase())){
+            if((all.get(i).getShortfilm_name()).toLowerCase().contains(shortfilm_name.toLowerCase())){
                 result.add(all.get(i));
             }
         }
